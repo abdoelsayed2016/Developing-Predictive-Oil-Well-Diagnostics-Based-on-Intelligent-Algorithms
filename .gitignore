@@ -1,0 +1,9 @@
+private
+*.pyc
+*.csv.gz
+.ipynb_checkpoints
+*.pkl
+.DS_Store
+Anaconda2*
+anaconda2
+install_notes.txt
