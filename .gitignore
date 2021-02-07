@@ -6,4 +6,6 @@ private
 .DS_Store
 Anaconda2*
 anaconda2
-install_notes.txt
+__pycache__
+.ipynb_checkpoints
+.idea

@@ -81,7 +81,7 @@ for ID in IDs:
 #load pdm models as needed
 models = {}
 if (strategy == 'pdm'):
-    fatal_issues = [issue_name for issue_name, d in issues.iteritems() if (d['fatal'] == True)]
+    fatal_issues = [issue_name for issue_name, d in issues.items() if (d['fatal'] == True)]
     #model_folder = '/u01/bdcsce/tmp/'
     model_folder = './'
     for issue in fatal_issues:
