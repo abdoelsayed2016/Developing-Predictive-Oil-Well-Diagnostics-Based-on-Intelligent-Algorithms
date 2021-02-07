@@ -265,7 +265,7 @@ def time_to_issue(records, issue_names):
             idx = (df.issue == issue)
             issue_times = df[idx].time.sort_index(ascending=False)
             if (len(issue_times) > 0):
-                for idx, issue_time in issue_times.iteritems():
+                for idx, issue_time in issue_times.items():
                     df.loc[0:idx, col] = issue_time
                 df[col] -= df.time
                 #df[col] = df[col].fillna(df[col].median().astype(int))
