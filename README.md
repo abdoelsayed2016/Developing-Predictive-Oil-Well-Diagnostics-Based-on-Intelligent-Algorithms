@@ -10,7 +10,7 @@ applied to a suite of 1000 virtual oil & gas wells. A simple toy-model approach 
 to simulate the production variations that real wells might experience
 as they operate over time. Each simulated well has three virtual sensors that measure three mock quantities:
 pressure P, temperature T, and load L.
-As time advances, a well's P,T,L settings slowly random-walk away
+As time advances, a well's P,T,L settings slowly random-walk away 
 from the well's sweet-spot, which is where well production is highest and faults are rarest.
 And as a well random-walks further from the sweet spot, it becomes ever more likely to suffer a failure,
 which then zeros the failed well's production as it waits for the next
