@@ -16,7 +16,7 @@ And as a well random-walks further from the sweet spot, it becomes ever more lik
 which then zeros the failed well's production as it waits for the next
 available technician to service it. And when the technician does complete the repair,
 that well's P,T,L settings are then returned to its sweet spot, and production resumes. Note that
-this simulation also has a limited pool of virtual technicians, and if technicians become
+this simulation also has a limited pool of virtual technicians, and if technicians become 
 oversubscribed by failed wells, then
 the next failed well must wait until a tech completes the current repair before servicing
 the next failed well, and such bottlenecks can result
