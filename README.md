@@ -32,7 +32,7 @@ telemetry + repair logs, to predict which operating wells are likely to fail soo
 are built, the following then reruns this simulation in PdM mode, which uses those ML models to flag those
 wells that are likely to fail soon, and then assigns available service technicians to perform
 preventative maintenance on the flagged wells. After the PdM simulation is complete,
-a Jupyter notebook loads the PdM output to assess how the suite of simulated wells'
+a Jupyter notebook loads the PdM output to assess how the suite of simulated wells'  
 production is boosted by the PdM strategy, and how PdM also impacts the technicians'
 utilization.
 
