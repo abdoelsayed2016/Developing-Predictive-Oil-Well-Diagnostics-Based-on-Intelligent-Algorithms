@@ -78,7 +78,7 @@ If you find this work useful for your research, please cite our paper:
 
 
 ### License
-The code of TNCR is Open Source under the [MIT License](LICENSE). There is no limitation for both acadmic and commercial usage.
+The code is Open Source under the [MIT License](LICENSE). There is no limitation for both acadmic and commercial usage.
 
 ### Reference 
 [1] https://github.com/joehahn/predictive-maintenance-sim <br>
