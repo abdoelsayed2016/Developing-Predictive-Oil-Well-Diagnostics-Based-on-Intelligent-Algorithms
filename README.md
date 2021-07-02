@@ -1,48 +1,20 @@
-# predictive maintenance sim 
+# Developing Predictive Oil Well Diagnostics Based on Intelligent Algorithms
+[![PWC](https://img.shields.io/badge/PyTorch-v1.8-red)](https://pytorch.org/)
 
-  
+> **Developing Predictive Oil Well Diagnostics Based on Intelligent Algorithms**<br>
+> [Zhanar Omirbekova](),
+> [Daur Aktaukenov](),
+> [Aslan Amangeldiyev](),
+> [Abdelrahman Abdallah](https://github.com/abdoelsayed2016),
+> <br>
+
+## Abstract 
+
+The current competitive market condition in the oil industry is so concentrated on companies' budgets that they require methods to extract oil from wells at the lowest possible cost. All pumping units, new or old, require regular preventive maintenance and constant inspection, and with 30 percent of total oil production coming from sucker rod pumps, the cost of diagnostics must be reduced accordingly.This article focuses on the intelligent diagnostics of the rod and borehole pump for preventive maintenance and monitoring during the life cycle of the well. The use of artificial intelligence methods for predictive diagnostics of equipment condition solves problems without production stoppages and without additional interventions from outside.
 
 
 
 
-
-
-by Abdelrahman Abdallah,<br />
-this repo is python3 version of https://github.com/joehahn/predictive-maintenance-sim
-
-The python codes and Jupyter notebooks provided here are used to
-simulate a Predictive Maintenance (PdM) strategy 
-applied to a suite of 1000 virtual oil & gas wells. A simple toy-model approach is used here, 
-to simulate the production variations that real wells might experience
-as they operate over time. Each simulated well has three virtual sensors that measure three mock quantities:
-pressure P, temperature T, and load L.
-As time advances, a well's P,T,L settings slowly random-walk away 
-from the well's sweet-spot, which is where well production is highest and faults are rarest.
-And as a well random-walks further from the sweet spot, it becomes ever more likely to suffer a failure,
-which then zeros the failed well's production as it waits for the next
-available technician to service it. And when the technician does complete the repair,
-that well's P,T,L settings are then returned to its sweet spot, and production resumes. Note that
-this simulation also has a limited pool of virtual technicians, and if technicians become 
-oversubscribed by failed wells, then
-the next failed well must wait until a tech completes the current repair before servicing
-the next failed well, and such bottlenecks can result
-in a considerable loss of production. Simulated 
-wells are also subject to three possible mock faults: a jammed_rotor, cracked_valve, or broken_gear, and every 
-tech that diagnoses a failed well also notes that diagnosis in repair log.
-
-The simulation is initially executed in run-to-fail (RTF) mode, which means that wells are
-serviced only after experiencing a failure, and the purpose of the RTF simulation is to generate
-a large pile of telemetry and repair data. Machine learning (ML) models are then trained on the
-telemetry + repair logs, to predict which operating wells are likely to fail soon. After the ML models
-are built, the following then reruns this simulation in PdM mode, which uses those ML models to flag those
-wells that are likely to fail soon, and then assigns available service technicians to perform
-preventative maintenance on the flagged wells. After the PdM simulation is complete,
-a Jupyter notebook loads the PdM output to assess how the suite of simulated wells'  
-production is boosted by the PdM strategy, and how PdM also impacts the technicians'
-utilization.
-
-See also my blog post on this topic at 
-https://www.datascience.com/blog/predictive-maintenance-for-upstream-oil-and-gas
 
 ### requirements:
 
@@ -88,9 +60,24 @@ Now that the PdM models have been built, execute the simulation again but in PdM
 
 
 
+## Cite as
+If you find this work useful for your research, please cite our paper:
+```
+@INPROCEEDINGS{9465959,
+  author={Omirbekova, Zhanar and Aktaukenov, Daur and Amangeldiyev, Aslan and Abdallah, Abdelrahman},
+  booktitle={2021 IEEE International Conference on Smart Information Systems and Technologies (SIST)}, 
+  title={Developing Predictive Oil Well Diagnostics Based on Intelligent Algorithms}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-7},
+  doi={10.1109/SIST50301.2021.9465959}}
+```
 
 
 
 
 
-
+### Reference 
+[1] https://github.com/joehahn/predictive-maintenance-sim
+[2] https://www.datascience.com/blog/predictive-maintenance-for-upstream-oil-and-gas
