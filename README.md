@@ -79,5 +79,5 @@ If you find this work useful for your research, please cite our paper:
 
 
 ### Reference 
-[1] https://github.com/joehahn/predictive-maintenance-sim
+[1] https://github.com/joehahn/predictive-maintenance-sim <br>
 [2] https://www.datascience.com/blog/predictive-maintenance-for-upstream-oil-and-gas
